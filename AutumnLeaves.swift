@@ -593,8 +593,10 @@ final class LeafScene: SKScene {
     }
 }
 
-let app = NSApplication.shared
-app.setActivationPolicy(.accessory)     // no Dock icon
-let delegate = AppDelegate()
-app.delegate = delegate
-app.run()
+MainActor.assumeIsolated {
+    let app = NSApplication.shared
+    app.setActivationPolicy(.accessory)     // no Dock icon
+    let delegate = AppDelegate()
+    app.delegate = delegate
+    app.run()                               // blocks here, so `delegate` stays alive
+}
