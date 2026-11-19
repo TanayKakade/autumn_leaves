@@ -15,7 +15,8 @@ Autumn leaves drift down over your Mac desktop and pile up on your windows and t
 ## Run it
 
 ```
-cd AutumnLeaves
+git clone https://github.com/TanayKakade/autumn_leaves.git 
+cd autumn_leaves
 zsh build.sh
 ```
 
