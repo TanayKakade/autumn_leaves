@@ -15,9 +15,17 @@ Autumn leaves drift down over your Mac desktop and pile up on your windows and t
 ## Run it
 
 ```
-git clone https://github.com/TanayKakade/autumn_leaves.git 
-cd autumn_leaves
-zsh build.sh
+## Install
+
+1. Open Terminal and install the Apple developer tools (one time): `xcode-select --install`
+2. Run:
+   ```
+   git clone https://github.com/TanayKakade/autumn_leaves.git
+   cd autumn_leaves
+   zsh make_app.sh
+   ```
+3. Drag `Autumn Leaves.app` into your Applications folder and open it.
+4. Use the 🍂 icon in the menu bar to change settings or Quit.
 ```
 
 If `swiftc` is missing, run `xcode-select --install` first. Use the 🍂 icon in the menu bar to pause, choose light, medium or heavy leaf fall, turn mouse swish off, sweep up all the leaves, or quit.
